@@ -1,0 +1,21 @@
+/* ***Reset*** */
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#container {
+    height: 100vh;
+    background-color: teal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#slider {
+    width: 100vh;
+    height: 50vh;
+    background-color: aquamarine;
+
+}
