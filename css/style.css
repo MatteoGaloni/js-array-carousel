@@ -5,6 +5,7 @@ body {
     box-sizing: border-box;
 }
 
+/* ***************** */
 #container {
     height: 100vh;
     background-color: teal;
@@ -18,4 +19,14 @@ body {
     height: 50vh;
     background-color: aquamarine;
 
+}
+
+.slide {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.hidden {
+    display: none;
 }
