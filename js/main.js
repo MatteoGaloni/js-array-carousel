@@ -4,7 +4,7 @@
 let sliderElement = document.getElementById("slider")
 console.log(sliderElement);
 let image = document.createElement("img");
-image.src = ["./img/01.webp", "./img/02.webp"];
+image.src = ["./img/01.webp"];
 
 image.className = "slide";
 sliderElement.append(image);
