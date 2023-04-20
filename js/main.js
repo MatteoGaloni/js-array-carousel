@@ -1,7 +1,7 @@
 const images = ["./img/01.webp", "./img/02.webp", "./img/03.webp", "./img/04.webp", "./img/05.webp"];
 // console.log(images);
 let currentImage = 0
-console.log(currentImage)
+// console.log(currentImage)
 
 
 for (let c = 0; c < images.length; c++) {
@@ -25,13 +25,18 @@ for (let c = 0; c < images.length; c++) {
 }
 
 const slideImages = document.querySelectorAll("#slider > img")
-console.log(slideImages)
+// console.log(slideImages)
 
 const btnNext = document.getElementById("btnNext")
 btnNext.addEventListener("click", function () {
     // console.log(btnNext)
     // currentImage = [slideImages]
     // console.log(currentImage)
+    currentImage = slideImages[0]
+    console.log(currentImage)
+   
+   
+
 
     currentImage ++
     console.log(currentImage)
