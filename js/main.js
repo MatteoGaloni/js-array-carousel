@@ -4,6 +4,7 @@ let currentImage = 0
 // console.log(currentImage)
 
 
+
 for (let c = 0; c < images.length; c++) {
     const sorgenteImg = images[c];
     // console.log(sorgenteImg)
@@ -32,9 +33,27 @@ btnNext.addEventListener("click", function () {
     // console.log(btnNext)
     // currentImage = [slideImages]
     // console.log(currentImage)
-    currentImage = slideImages[0]
-    console.log(currentImage)
-   
+    if (currentImage == 4) {
+        slideImages[4].classList.remove("dBlock")
+        currentImage = -1
+    }
+
+    const ImgElement = slideImages[currentImage+1]
+    console.log(ImgElement)
+    ImgElement.classList.add("dBlock")
+    const ImgElement1 = slideImages[currentImage]
+    if (currentImage > -1) {
+        ImgElement1.classList.remove("dBlock")        
+    }
+
+    
+    
+
+
+
+        // currentImage.classList = "dBlock"
+        // console.log(currentImage)
+    
    
 
 
